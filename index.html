@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@1,800&family=Arvo&family=Bree+Serif&family=Libre+Baskerville:wght@700&family=Nunito:wght@300&family=Orelega+One&family=PT+Serif:ital,wght@1,700&family=Roboto+Slab:wght@600&family=Signika+Negative:wght@300&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/48a00b8081.js" crossorigin="anonymous"></script>
+
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            background: linear-gradient(90deg, #070e2b, #020338);
+        }
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* min-height: 97vh; */
+        }
+
+        h2 {
+            color: #12d25f;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+
+        .box {
+            width: 90%;
+            background: linear-gradient(90deg, #1beca3, #12d25f);
+            padding: 1rem;
+            border-radius: .2rem;
+        }
+
+        .box input {
+            width: 100%;
+            outline: none;
+            border: none;
+            min-height: 2.2rem;
+            /* padding-left: 1rem; */
+            font-weight: bold;
+            background-color: white;
+            caret-color: #020338;
+            border-radius: .2rem;
+        }
+
+        .box input::placeholder {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        .box ul {
+            padding-left: 0;
+        }
+
+        .box ul li {
+            list-style: none;
+            background-color: #020338;
+            color: white;
+            padding: .5rem;
+            border-radius: .2rem;
+        }
+
+        .box ul li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: .7rem;
+            margin-bottom: .5rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+    <h2>Todo List</h2>
+        <div class="box">
+            <input type="text" id="item" placeholder="Write Something Here..." autofocus>
+            <ul id="to-do-box">
+                <!-- <li>Add Something
+                    <i class="fas fa-times"></i>
+                </li> -->
+            </ul>
+        </div>
+    </section>
+    <script src="/script.js"></script>
+</body>
+
+</html>
